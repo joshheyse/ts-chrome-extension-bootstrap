@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "TS Chrome Extension",
-  "version": "0.2",
+  "version": "0.1",
   "description": "A Chrome Extension Written in Typescript Using Webpack",
   "icons": {
     "128": "icon.png"

@@ -1,5 +1,6 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const package = require('./package.json');
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -21,8 +22,18 @@ module.exports = {
     ]
   },
   plugins: [
-    new CopyWebpackPlugin([
-      { from: 'static/' }
-    ])
+    new CopyWebpackPlugin([{
+      from: 'static/',
+      transform: (content, path) => {
+        if(/static\/manifest.json$/.test(path)) {
+          const manifest = JSON.parse(content);
+          manifest.version = package.version;
+          return JSON.stringify(manifest, null, 2);
+        }
+        else {
+          return content;
+        }
+      }
+    }])
   ]
 }
