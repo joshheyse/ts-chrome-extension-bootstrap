@@ -21,4 +21,5 @@ Tests are provided with Karma, Mocha, Chai & Sinon
 * single run `npm test`
 * watch `npm run test:watch`
 
-
+## Package for Deployment
+To create a zip file ready for upload the the Chrome store run `npm run package` which will create an extension.zip file
