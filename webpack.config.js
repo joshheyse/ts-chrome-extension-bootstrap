@@ -5,7 +5,8 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: {
     background: './src/background/index.ts',
-    content: './src/content/index.ts'
+    content: './src/content/index.ts',
+    popup: './src/views/popup/index.tsx'
   },
   output: {
     path: path.join(__dirname, 'dist'),
