@@ -10,3 +10,9 @@
 ## React
 Using React for popup, options or other views is optional, but included
 
+## Tests
+Tests are provided with Karma, Mocha, Chai & Sinon
+single run `npm test`
+watch `npm run test:watch`
+
+
