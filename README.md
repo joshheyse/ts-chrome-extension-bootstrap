@@ -6,3 +6,7 @@
 3. chrome://extensions
 4. Check Developer Mode
 5. Load Unpacked Extension (browse to repo/dist)
+
+## React
+Using React for popup, options or other views is optional, but included
+
