@@ -1,5 +1,11 @@
 # Chrome Extension in Typescript w/ Webpack
 
+A boilerplate project for developing a Chrome extensions with:
+* TypeScript
+* Webpack
+* React for UI Components
+* Karma for testing
+
 ## Dev Steps
 1. npm install
 2. npm start
